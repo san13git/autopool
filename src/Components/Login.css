@@ -1,0 +1,57 @@
+
+
+.main-div{
+  
+  height:100%;
+}
+.bablu{
+  /* padding: 20px ; */
+  margin-bottom: 30px;
+}
+.login-container {
+  background-image: url('https://bhaskart.com/wp-content/uploads/2021/11/Lessons-from-an-auto-rickshaw-ride.jpg');
+    width: 350px;
+    margin: 100px auto;  
+    padding: 20px; 
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+    
+  }
+  
+  /* Input fields */
+  .login-input {
+    width: 100%;
+    padding: 15px; /* Increased padding */
+    margin-bottom: 20px; /* Increased space between fields */
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Rounded corners */
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Add border styling */
+  border-radius: 5px; /* Add border radius */
+  }
+  
+  /* Remember me and forgot password links */
+  .login-links {
+    display: flex;
+    justify-content: flex-start; /* Align links to the left */
+    margin-bottom: 20px; /* Increased space below links */
+    color: #f90;
+  }
+  
+  /* Login button */
+  .login-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #f90; /* Orange color */
+    color: #fff;
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer;
+  }
+  
+  .login-button:hover {
+    background-color: #ff8800; /* Darker orange on hover */
+  }
+  

@@ -1,0 +1,104 @@
+
+
+
+
+/*
+  .search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%; 
+    margin: 0 auto; 
+  }
+  
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    width: 150px; 
+    display: inline-block;
+  }
+  
+  .publish-input {
+    width: calc(100% - 160px); 
+    padding: 10px;
+    margin-left: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .publish-button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .publish-button:hover {
+    background-color: orange;
+  }
+  */
+
+
+  .search-cons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30%; /* Adjust the width as per your preference */
+    margin-left: 20px; /* Shift towards left */
+    margin-top:30px;
+  }
+  
+  .card {
+    width: 100%;
+    margin-bottom: 15px; /* Decrease margin */
+  }
+  
+  label {
+    width: 120px; /* Fixed width for labels */
+    display: inline-block;
+  }
+  
+  .publish-input {
+    width: calc(100% - 130px); /* Subtracting label width */
+    padding: 8px; /* Decrease padding */
+    margin-left: 10px; 
+    /* Adjust as needed for spacing */
+    margin-bottom:10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px; /* Decrease font size */
+  }
+  
+  .publish-button {
+    width: calc(100% - 130px);
+    background-color: orange;
+    color: white;
+    padding: 8px ; /* Decrease padding */
+    margin-left: 65px; 
+    /* Adjust as needed for spacing */
+    margin-bottom:10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px; /* Decrease font size */
+  }
+  
+  .publish-button:hover {
+    background-color: orange;
+  }
+
+  .des{
+    margin-left:70px;
+  }
+  
+  
+  
+  
+  

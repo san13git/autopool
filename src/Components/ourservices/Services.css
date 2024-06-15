@@ -1,0 +1,25 @@
+.services-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .services-scroll {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .services-scroll::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .services-scroll::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+  }
+  
+  .services-scroll::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+  }
+  

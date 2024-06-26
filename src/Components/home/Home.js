@@ -5,6 +5,7 @@ import rickcheck from '../../assets/rickcheck.png'
 const Home = () => {
   return (
     <div className="home">
+    {/* <Navbar/> */}
     <div className="full-width-image">
     {/* <img src="https://cdn.dribbble.com/users/1845565/screenshots/6414076/000.gif" alt="Full Width Image" /> */}
     {/* <img src={rickcheck} /> */}

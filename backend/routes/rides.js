@@ -18,17 +18,26 @@
 const express = require('express');
 const router = express.Router();
 const Ride = require('../models/Ride');
+// const moment=require('moment')
+const moment = require('moment-timezone');
+
+function isValidDate(dateString) {
+    return moment(dateString, 'YYYY-MM-DD', true).isValid();
+  }
+  
 
 // Add a new ride
 router.post('/add', async (req, res) => {   //  /add is the endpoint
-    const { leavingFrom, goingTo, date, availableSeats, driver } = req.body;
+    const { leavingFrom, goingTo, date, availableSeats,drivername} = req.body;
     const newRide = new Ride({
         leavingFrom,
         goingTo,
         date,
         availableSeats,
-        driver
+        drivername
+        
     });
+    
 
     try {
         const savedRide = await newRide.save();
@@ -39,16 +48,40 @@ router.post('/add', async (req, res) => {   //  /add is the endpoint
 });
 
 // Search for rides
-router.get('/search', async (req, res) => {
-    const { leavingFrom, goingTo, date } = req.body;
+// function isValidDate(dateString) {
+// //     const format1='YYYY-MM-DD'
+// //    return moment(dateString).format(format1);
+//     return moment(dateString, 'YYYY-MM-DD', true).isValid();
+//   }
 
+router.get('/search', async (req, res) => {
+    const { leavingFrom, goingTo, date } = req.query;
+    
+    //   console.log(`Received date: ${date}`);
+      
+    //   if (date && !isValidDate(date)) {
+    //     return res.status(400).send({ error: 'Invalid date format' });
+    // }
+
+    // const searchDate = date ? moment(date, 'YYYY-MM-DD').startOf('day').toDate() : null;
+    
+    
+
+    // console.log(`Parsed date: ${searchDate}`);
+
+
+  
     try {
-        const rides = await Ride.find({ 
-            leavingFrom, 
-            goingTo, 
-            date: new Date(date) 
-        });
+        const query = { leavingFrom, goingTo ,date};
+        // console.log(searchDate);
+        // if (searchDate) {
+        //     query.date = { $eq: searchDate };
+            
+        // }
+
+        const rides = await Ride.find(query);
         res.status(200).json(rides);
+        
     } catch (err) {
         res.status(400).json({ error: err.message });
     }

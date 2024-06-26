@@ -41,6 +41,7 @@ function Navbar(){
   <i className="fa-solid fa-user"></i>
   {dropdownVisible && (
     <div className="dropdown-menu">
+    
       <button onClick={()=>navigate("/login")}>Log In</button>
       <br />
       <button onClick={()=>navigate("/signup")}>Sign up</button>

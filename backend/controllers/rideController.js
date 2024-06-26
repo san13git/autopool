@@ -1,6 +1,7 @@
 // backend/controllers/rideController.js
 
 const Ride = require('../models/Ride');
+const { isValid, parseISO } = require('date-fns');
 
 // Controller for creating a new ride
 exports.createRide = async (req, res) => {
@@ -30,12 +31,18 @@ exports.searchRides = async (req, res) => {
 
     // Build the query object based on the provided criteria
     const query = {};
-    if (leavingFrom) query.origin = leavingFrom;
-    if (goingTo) query.destination = goingTo;
-    if (date) {
-      // Assume date is in ISO format (e.g., "2024-04-15")
-      query.departureTime = new Date(date);
-    }
+    if (leavingFrom) query.leavingFrom = leavingFrom;
+    if (goingTo) query.goingTo = goingTo;
+    if(date) query.date=date;
+    // if (date) {
+    //   const parsedDate = parseISO(date);
+    //   if (!isValid(parsedDate)) {
+    //     return res.status(400).json({ error: 'Invalid date format' });
+    //   }
+    //   query.date = parsedDate;
+      
+      
+    // }
 
     // Find rides that match the query criteria
     const rides = await Ride.find(query);

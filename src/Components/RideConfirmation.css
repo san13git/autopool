@@ -1,0 +1,86 @@
+.ride-confirmation {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .ride-confirmation h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .ride-summary, .driver-details {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .ride-summary h3, .driver-details h3 {
+    color: #555;
+  }
+  
+  .ride-summary p, .driver-details p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .ride-summary p strong, .driver-details p strong {
+    color: #333;
+  }
+  
+  .driver-details img {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  .confirmation-message p {
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .action-buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .action-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .edit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .cancel-button {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .cancel-button:hover {
+    background-color: #c82333;
+  }
+  
+  .view-requests-button {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .view-requests-button:hover {
+    background-color: #218838;
+  }
+  

@@ -12,32 +12,27 @@ const rideSchema = new mongoose.Schema({
         required: true
     },
     date: {
-        type: Date,
+        type: String,
+        
         required: true
     },
-  driver: {
-    // type: mongoose.Schema.Types.ObjectId,
-    type: String,
-    ref: 'User',
-    required: true
-  },
-  // origin: {
+  // driver: {
+  //   // type: mongoose.Schema.Types.ObjectId,
   //   type: String,
+  //   ref: 'User',
   //   required: true
   // },
-  // destination: {
-  //   type: String,
-  //   required: true
-  // },
-  // departureTime: {
-  //   type: String,
-  //   required: true
-  // },
+
+  
   availableSeats: {
     type: Number,
     required: true
   },
-  // Add more fields as needed
+  drivername:{
+    type:String,
+    required:true
+  }
+  
 
   
   

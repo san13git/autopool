@@ -50,6 +50,8 @@ import Search from './Components/Search'
 import PublishRide from './Components/PublishRide';
 import SignUp from './Components/SignUp';
 import LandingPage from './Components/pages/LandingPage'
+// import PublishRide from './Components/PublishRide.js'
+import RideConfirmation from './Components/RidePublishConfirm'
 
 function App() {
   return (
@@ -68,7 +70,9 @@ function App() {
           <Route path="/search" element={<Search/>} />
           <Route path="/publish" element ={<PublishRide/>}/>
           <Route path="/signup" element={<SignUp/>}/>
+          <Route path="/ride-confirmation" element={<RideConfirmation />} />
         </Routes>
+        
       </div>
     </BrowserRouter>
   );

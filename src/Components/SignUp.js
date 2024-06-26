@@ -49,7 +49,8 @@
 
 
 import React, { useState } from 'react';
-import './SignUp.css'; // Import the CSS file for styling
+import './SignUp.css'; 
+import axios from 'axios'
 import Blurbb from '../assets/blurbb.jpg'
 
 function SignUp() {
@@ -59,6 +60,7 @@ function SignUp() {
   const [contactNumber, setContactNumber] = useState('');
   const [saveDetails, setSaveDetails] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
 
   const handleNameChange = (e) => {
     setName(e.target.value);
@@ -85,19 +87,28 @@ function SignUp() {
     return regex.test(number);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
+    
+
     e.preventDefault();
     if (!validateContactNumber(contactNumber)) {
       setErrorMessage('Contact number must be exactly 10 digits.');
       return;
     }
-    // Handle form submission, e.g., send data to backend
-    console.log('Name:', name);
-    console.log('Email:', email);
-    console.log('Password:', password);
-    console.log('Contact Number:', contactNumber);
-    console.log('Save Details:', saveDetails);
-    setErrorMessage(''); // Clear error message on successful submission
+    try {
+      const response = await axios.post('http://localhost:3000/api/v1/userroute/register', {
+        name,
+        email,
+        password,
+        contactnumber: contactNumber
+      });
+      setSuccessMessage(response.data.message);
+      alert('Succesfully registered')
+      setErrorMessage('');
+    } catch (error) {
+      setErrorMessage(error.response.data.message || 'An error occurred');
+      setSuccessMessage('');
+    }
   };
 
   return (

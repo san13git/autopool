@@ -17,10 +17,10 @@
   }
 
   .second-navbar {
-    background-color: white; /* Background color of the second navbar */
+    background-color: orange; /* Background color of the second navbar */
     /* padding: 10px; Padding around the links */
     width: 100%;
-    height:40px;
+    height:50px;
   }
   
   .second-navbar-links {
@@ -28,19 +28,25 @@
   }
   
   .second-navbar-links span {
+    padding-top:10px;
     margin-right: 100px; /* Spacing between links */
     padding-left: 80px;
     cursor: pointer; /* Change cursor to pointer on hover */
-    color: #FFA500; /* Text color */
+    color: white; /* Text color */
     font-weight: bold; /* Bold text */
     font-size: large;
+    
 
     text-decoration: none; /* Remove underline */
     transition: color 0.3s; /* Smooth transition for color change */
   }
   
-  .second-navbar-links span:hover {
-    color: #007bff; /* Change text color on hover */
+  .second-navbar-links span:hover{
+    transform: scale(1.1);
+    color: white; /* Change text color on hover */
+   
+    /* background-color: orange;
+    color: white; */
   }
   
   .navbar-icons {
@@ -74,4 +80,12 @@
   
   .dropdown-content a:hover {
     background-color: #f0f0f0;
+  }
+  .dropdown-menu button{
+    border-radius:5px;
+    width:80px;
+    background-color: white;
+    color:orange;
+    border-color: white;
+
   }

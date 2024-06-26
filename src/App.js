@@ -52,12 +52,13 @@ import SignUp from './Components/SignUp';
 import LandingPage from './Components/pages/LandingPage'
 // import PublishRide from './Components/PublishRide.js'
 import RideConfirmation from './Components/RidePublishConfirm'
+import RideConfirmationUser from './Components/rideconfirmuser';
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Navbar />
+        {/* <Navbar /> */}
         
         
        
@@ -71,6 +72,7 @@ function App() {
           <Route path="/publish" element ={<PublishRide/>}/>
           <Route path="/signup" element={<SignUp/>}/>
           <Route path="/ride-confirmation" element={<RideConfirmation />} />
+          <Route path="/ride-hai" element={<RideConfirmationUser/>}/>
         </Routes>
         
       </div>

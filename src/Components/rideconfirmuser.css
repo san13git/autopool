@@ -1,0 +1,49 @@
+.ride-confirmation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://www.freepik.com/free-psd/3d-rendering-travel-tourists_31283817.htm#query=travel%20cartoon&position=1&from_view=keyword&track=ais_user&uuid=d0b1d1d9-102a-46a7-ad58-d56c0546e8ec');
+    font-family: 'Arial', sans-serif;
+    
+  
+  }
+  
+  .confirmation-card {
+    background: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 500px;
+    height:300px;
+    padding-left: 20px;
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .sub-heading {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .details {
+    text-align: left;
+  }
+  
+  .details p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .details span {
+    font-weight: bold;
+    color: #333;
+  }
+  

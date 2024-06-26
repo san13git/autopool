@@ -73,6 +73,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './Search.css';
 import './RidePublishConfirm'
+import './rideconfirmuser'
 
 const Search = () => {
   const [leavingFrom, setLeavingFrom] = useState('');
@@ -113,10 +114,11 @@ const Search = () => {
         leavingFrom: ride.leavingFrom,
         goingTo: ride.goingTo,
         availableSeats: ride.availableSeats,
-        date: ride.date
+        date: ride.date,
+        drivername:ride.drivername
       });
       setSuccessMessage(response.data.message);
-      navigate('/ride-confirmation', { state: { rideDetails: { leavingFrom: ride.leavingFrom, goingTo: ride.goingTo, availableSeats: ride.availableSeats, date: ride.date } } });
+      navigate('/ride-hai', { state: { rideDetails: { leavingFrom: ride.leavingFrom, goingTo: ride.goingTo, availableSeats: ride.availableSeats, date: ride.date } } });
       setErrorMessage('');
     } catch (error) {
       setErrorMessage(error.response.data.message || 'An error occurred');
@@ -146,7 +148,8 @@ const Search = () => {
                 <div className="card" key={ride.id}>
                   <div className="ride-details">
                     <h3>{ride.leavingFrom} to {ride.goingTo}</h3>
-                    <p>{ride.date}</p>
+                    <p>Date: {ride.date}</p>
+                    <p>Driver: {ride.drivername}</p>
                     <button className="bookride" onClick={(e) => bookride(e, ride)}>Book Ride</button>
                   </div>
                 </div>

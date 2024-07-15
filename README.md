@@ -22,6 +22,8 @@ Authentication
 ![login](https://github.com/san13git/autopool/raw/master/images/loginauto.png)
 Publish ride
 ![publish ride](https://github.com/san13git/autopool/raw/master/images/publishrideauto.png)
+Driver ride confirm
+![driver ride](https://github.com/san13git/autopool/raw/master/images/driver ride publish.png)
 
 
 

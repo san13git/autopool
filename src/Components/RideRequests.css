@@ -1,0 +1,21 @@
+.ride-requests {
+    padding: 20px;
+  }
+  
+  .ride-requests h2 {
+    margin-bottom: 20px;
+  }
+  
+  .ride-requests ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .ride-requests li {
+    margin-bottom: 10px;
+  }
+  
+  .ride-requests p {
+    margin: 0;
+  }
+  

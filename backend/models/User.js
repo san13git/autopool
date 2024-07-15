@@ -61,6 +61,7 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+require('dotenv').config()
 
 const userSchema = new mongoose.Schema({
   name: {
@@ -97,11 +98,11 @@ userSchema.methods.generateAuthToken = function() {
 userSchema.statics.findByCredentials = async function(email, password) {
   const user = await this.findOne({ email });
   if (!user) {
-    throw new Error('Invalid credentials');
+    throw new Error('Invalid credentials email');
   }
   const isPasswordMatch = await bcrypt.compare(password, user.password);
   if (!isPasswordMatch) {
-    throw new Error('Invalid credentials');
+    throw new Error('Invalid credentials pass');
   }
   return user;
 };

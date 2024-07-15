@@ -18,6 +18,10 @@ About section
 ![Aboutsection](https://github.com/san13git/autopool/raw/master/images/aboutauto.png)
 Services Section
 ![servicesection](https://github.com/san13git/autopool/raw/master/images/servicesauto.png)
+Authentication
+![login](https://github.com/san13git/autopool/raw/master/images/loginauto.png)
+Publish ride
+![publish ride](https://github.com/san13git/autopool/raw/master/images/publishrideauto.png)
 
 
 

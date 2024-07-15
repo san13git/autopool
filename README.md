@@ -12,8 +12,10 @@ Features -
 5.Rating and Feedback: Customers can rate drivers and provide feedback to improve the service quality.
 
 Snippets of the project -
-###Screenshots
+Home page
 ![Home Automation Screenshot](https://github.com/san13git/autopool/raw/master/images/homauto.png)  
+About section
+![Aboutsection](https://github.com/san13git/autopool/raw/master/images/aboutauto.png)
 
 
 

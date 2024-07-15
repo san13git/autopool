@@ -13,3 +13,6 @@ Features -
 
 Snippets of the project -
 
+Home Page 
+
+

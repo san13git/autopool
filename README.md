@@ -1,4 +1,4 @@
-**GetRide**
+#**GetRide**
 
 How I thought of this idea -
 Living in a hostel, I often faced the challenge of expensive auto rickshaw rides, which typically cost at least 300 INR even for nearby destinations. Additionally, auto rickshaw drivers often wait to gather more passengers, causing unnecessary delays and wasting valuable time. To address these issues, I decided to build GetRide.

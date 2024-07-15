@@ -65,9 +65,10 @@ exports.loginUser = async (req, res) => {
     const { email, password } = req.body;
     const user = await User.findByCredentials(email, password);
     const token = user.generateAuthToken();
+    console.log("abc");
     res.status(200).json({ token });
   } catch (error) {
     console.error('Error logging in user:', error);
-    res.status(400).json({ message: 'Invalid credentials' });
+    res.status(400).json({ message: 'Invalid credentials what' });
   }
 };

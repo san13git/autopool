@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';  //using props carry previous data of the form
 import './RideConfirmation.css';
+import RideRequests from './RideRequests';
 
 const RideConfirmation = () => {
   const location = useLocation();
@@ -22,7 +23,12 @@ const RideConfirmation = () => {
   };
 
   const handleViewRequests = () => {
-    console.log('View Ride Requests');
+    try {
+     
+      navigate('/ride-requests', { state: { drivername: rideDetails.drivername } });
+    } catch (error) {
+      console.error('Error fetching ride requests:', error);
+    }
   };
 
   return (

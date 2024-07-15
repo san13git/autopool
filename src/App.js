@@ -53,6 +53,7 @@ import LandingPage from './Components/pages/LandingPage'
 // import PublishRide from './Components/PublishRide.js'
 import RideConfirmation from './Components/RidePublishConfirm'
 import RideConfirmationUser from './Components/rideconfirmuser';
+import RideRequests from './Components/RideRequests';
 
 function App() {
   return (
@@ -73,6 +74,8 @@ function App() {
           <Route path="/signup" element={<SignUp/>}/>
           <Route path="/ride-confirmation" element={<RideConfirmation />} />
           <Route path="/ride-hai" element={<RideConfirmationUser/>}/>
+          <Route path="/ride-requests" element={<RideRequests/>}/>
+          
         </Routes>
         
       </div>

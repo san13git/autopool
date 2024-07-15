@@ -144,17 +144,17 @@ function Login() {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/login', {
-        params: {
+      const response = await axios.post(`http://localhost:3000/api/v1/userroute/login`, {
+        
           email: username,
           password: password,
-        },
+      
       });
       setToken(response.data.token);
       setLoggedIn(true);
       setErrorMessage('');
     } catch (error) {
-      setErrorMessage(error.response?.data?.message || 'An error occurred');
+      setErrorMessage(error.response?.data?.message || 'Not Found! Pls Sign Up First');
     }
   };
 
@@ -173,6 +173,8 @@ function Login() {
       </div>
     );
   }
+
+  
 
   return (
     <div className="main-div" style={{

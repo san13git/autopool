@@ -26,6 +26,8 @@ Driver ride confirm
 ![driver ride](https://github.com/san13git/autopool/raw/master/images/driver%20ride%20publish.png)
 Customer ride confirm
 ![driver ride](https://github.com/san13git/autopool/raw/master/images/rideconfirm.png)
+Feedback page
+
 
 
 

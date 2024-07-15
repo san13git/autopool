@@ -12,7 +12,7 @@ Features -
 5.Rating and Feedback: Customers can rate drivers and provide feedback to improve the service quality.
 
 Snippets of the project -
-![Home page](../images/homeauto.png)  
+![Home page](images/homeauto.png)  
 
 
 

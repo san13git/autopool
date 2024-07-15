@@ -27,8 +27,8 @@ const Contact = () => {
     <div className="contact-container">
       <h1>Contact Us</h1>
       <div className="contact-details">
-        <p><strong>Phone:</strong> (123) 456-7890</p>
-        <p><strong>Email:</strong> support@autopool.com</p>
+        <p><strong>Phone:</strong> +91 98675490874</p>
+        <p><strong>Email:</strong> support@getride.com</p>
         {/* <p><strong>Office Address:</strong> 123 Auto Pool Lane, Ride City, CA 90210</p>
         <p><strong>Business Hours:</strong> Monday - Friday: 9:00 AM - 6:00 PM</p> */}
       </div>
@@ -57,6 +57,7 @@ const Contact = () => {
         </div>
         <button type="submit">Submit</button>
       </form>
+      <p>Copyright @SANYABHASIN</p>
     </div>
   );
 };

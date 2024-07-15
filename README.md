@@ -16,6 +16,8 @@ Home page
 ![Home Automation Screenshot](https://github.com/san13git/autopool/raw/master/images/homauto.png)  
 About section
 ![Aboutsection](https://github.com/san13git/autopool/raw/master/images/aboutauto.png)
+Services Section
+![servicesection](https://github.com/san13git/autopool/raw/master/images/servicesauto.png)
 
 
 
